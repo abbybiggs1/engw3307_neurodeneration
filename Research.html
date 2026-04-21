@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources & Glossary — The Aging Brain</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero { background: linear-gradient(135deg, #3b1f4a 0%, #5a2d72 55%, #1a0828 100%); }
+
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .glossary-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.4rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 12px rgba(59,31,74,0.07);
+    }
+    .glossary-term {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--plum-mid);
+      margin-bottom: 0.3rem;
+    }
+    .glossary-def {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    /* Filter tabs */
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .filter-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 0.35rem 1rem;
+      border-radius: 99px;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--text-soft);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--plum);
+      color: var(--white);
+      border-color: var(--plum);
+    }
+  </style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<header class="page-hero">
+  <p class="hero-sub">Chapter 7</p>
+  <h1>Resources &amp; Glossary</h1>
+  <p>Support organizations, further reading, and definitions for all key terms used in this guide.</p>
+</header>
+
+<!-- ── Support Organizations ── -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Support organizations</p>
+    <h2>Where to Find Help and Information</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p class="lead">Whether you are looking for support for yourself, a family member, or simply want to learn more, these organizations are trusted starting points.</p>
+
+    <h3 style="margin-bottom:1rem;">Alzheimer's Disease</h3>
+    <a href="https://www.alz.org" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🧠</span>
+      <div>
+        <div class="rl-title">Alzheimer's Association — alz.org</div>
+        <div class="rl-desc">The leading voluntary health organization in Alzheimer's care, support, and research. Includes a 24/7 helpline (1-800-272-3900), caregiver resources, and information on clinical trials.</div>
+      </div>
+    </a>
+    <a href="https://www.nia.nih.gov/health/alzheimers-dementia" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🏛️</span>
+      <div>
+        <div class="rl-title">National Institute on Aging (NIA) — nia.nih.gov</div>
+        <div class="rl-desc">U.S. government resource with authoritative, science-based information about Alzheimer's and related dementias, clinical trials, and caregiver guides.</div>
+      </div>
+    </a>
+    <a href="https://www.alzforum.org" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🔬</span>
+      <div>
+        <div class="rl-title">Alzforum — alzforum.org</div>
+        <div class="rl-desc">A research community hub covering the latest Alzheimer's and related dementia research news. More technical, but excellent for following recent scientific developments.</div>
+      </div>
+    </a>
+
+    <h3 style="margin-top:2.5rem;margin-bottom:1rem;">Parkinson's Disease</h3>
+    <a href="https://www.parkinson.org" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🔵</span>
+      <div>
+        <div class="rl-title">Parkinson's Foundation — parkinson.org</div>
+        <div class="rl-desc">Dedicated to improving the lives of people with Parkinson's. Provides a helpline (1-800-473-4636), Parkinson's-specific exercise programs, and a network of Centers of Excellence.</div>
+      </div>
+    </a>
+    <a href="https://www.michaeljfox.org" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🦊</span>
+      <div>
+        <div class="rl-title">Michael J. Fox Foundation — michaeljfox.org</div>
+        <div class="rl-desc">The world's largest private funder of Parkinson's research. Also hosts Fox Trial Finder, which helps connect patients with clinical trials.</div>
+      </div>
+    </a>
+
+    <h3 style="margin-top:2.5rem;margin-bottom:1rem;">ALS</h3>
+    <a href="https://www.als.org" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">⚡</span>
+      <div>
+        <div class="rl-title">ALS Association — als.org</div>
+        <div class="rl-desc">The only national nonprofit organization fighting ALS on every front. Provides a helpline, local chapter support, equipment loan programs, and research funding information.</div>
+      </div>
+    </a>
+    <a href="https://www.lesturnerals.org" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🤝</span>
+      <div>
+        <div class="rl-title">Les Turner ALS Foundation — lesturnerals.org</div>
+        <div class="rl-desc">A research and support organization with particular strength in ALS clinical care, family support services, and cutting-edge research programs.</div>
+      </div>
+    </a>
+
+    <h3 style="margin-top:2.5rem;margin-bottom:1rem;">General Brain Health &amp; Research</h3>
+    <a href="https://www.clinicaltrials.gov" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🧪</span>
+      <div>
+        <div class="rl-title">ClinicalTrials.gov</div>
+        <div class="rl-desc">The U.S. registry of all clinical trials. Search for ongoing Alzheimer's, Parkinson's, or ALS trials you may be eligible to participate in.</div>
+      </div>
+    </a>
+    <a href="https://www.who.int/news-room/fact-sheets/detail/dementia" target="_blank" rel="noopener" class="resource-link">
+      <span class="rl-icon">🌍</span>
+      <div>
+        <div class="rl-title">World Health Organization — Dementia Fact Sheet</div>
+        <div class="rl-desc">Global statistics, risk factor information, and WHO initiatives on dementia and brain health.</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ── Glossary ── -->
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Glossary</p>
+    <h2>Key Terms Defined</h2>
+    <div class="gold-rule"><span>✦</span></div>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All Terms</button>
+      <button class="filter-btn" data-filter="basic">Brain Basics</button>
+      <button class="filter-btn" data-filter="alzheimer">Alzheimer's</button>
+      <button class="filter-btn" data-filter="parkinson">Parkinson's</button>
+      <button class="filter-btn" data-filter="als">ALS</button>
+    </div>
+
+    <div class="glossary-grid" id="glossaryGrid">
+      <!-- Brain basics -->
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Neuron</div>
+        <p class="glossary-def">A specialized nerve cell that transmits electrical and chemical signals throughout the nervous system. The basic functional unit of the brain.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Central Nervous System (CNS)</div>
+        <p class="glossary-def">The brain and spinal cord together. The command center that receives, processes, and sends signals throughout the body.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Synapse</div>
+        <p class="glossary-def">The tiny gap between two neurons where chemical signals (neurotransmitters) are passed from one cell to the next.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Neurotransmitter</div>
+        <p class="glossary-def">A chemical messenger that carries signals across synapses. Examples include dopamine, serotonin, glutamate, and acetylcholine.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Neurodegeneration</div>
+        <p class="glossary-def">The progressive loss of structure or function of neurons, including their death. The underlying process in diseases like Alzheimer's, Parkinson's, and ALS.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Cognitive Decline</div>
+        <p class="glossary-def">A decrease in mental abilities such as memory, language, reasoning, and attention that is greater than expected with normal aging.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Protein Misfolding</div>
+        <p class="glossary-def">When a protein takes on an abnormal three-dimensional shape that prevents it from functioning properly. Misfolded proteins often clump together and become toxic to cells.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Neuroinflammation</div>
+        <p class="glossary-def">Inflammation within the brain or spinal cord. While it can be protective initially, chronic neuroinflammation contributes to neuronal damage in many neurodegenerative diseases.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Hippocampus</div>
+        <p class="glossary-def">A seahorse-shaped brain region critical for forming new memories and spatial navigation. One of the first regions damaged in Alzheimer's disease.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Microglia</div>
+        <p class="glossary-def">The immune cells of the central nervous system. They protect the brain from damage and clear cellular debris, but can contribute to harm if chronically activated.</p>
+      </div>
+      <div class="glossary-item" data-cat="basic">
+        <div class="glossary-term">Mitochondria</div>
+        <p class="glossary-def">Organelles inside cells that produce energy. Often called the "powerhouses of the cell." Dysfunction in mitochondria is linked to neurodegeneration.</p>
+      </div>
+
+      <!-- Alzheimer's -->
+      <div class="glossary-item" data-cat="alzheimer">
+        <div class="glossary-term">Amyloid Plaque</div>
+        <p class="glossary-def">A sticky deposit of beta-amyloid protein fragments that accumulates between neurons in the brains of people with Alzheimer's disease, disrupting cell communication.</p>
+      </div>
+      <div class="glossary-item" data-cat="alzheimer">
+        <div class="glossary-term">Tau Tangle (Neurofibrillary Tangle)</div>
+        <p class="glossary-def">Twisted fibers of the tau protein that build up inside neurons in Alzheimer's disease, collapsing the internal transport system and causing cells to die.</p>
+      </div>
+      <div class="glossary-item" data-cat="alzheimer">
+        <div class="glossary-term">Dementia</div>
+        <p class="glossary-def">An umbrella term for a group of symptoms — including memory loss, confusion, and impaired judgment — severe enough to interfere with daily life. Alzheimer's is the most common cause.</p>
+      </div>
+      <div class="glossary-item" data-cat="alzheimer">
+        <div class="glossary-term">Beta-Amyloid (Aβ)</div>
+        <p class="glossary-def">A protein fragment that normally exists in the brain but in Alzheimer's disease accumulates into plaques. Its exact role in causing neuronal damage is still being researched.</p>
+      </div>
+      <div class="glossary-item" data-cat="alzheimer">
+        <div class="glossary-term">Cholinesterase Inhibitor</div>
+        <p class="glossary-def">A class of drugs (e.g., donepezil, rivastigmine) that slow the breakdown of acetylcholine in the brain, temporarily improving memory and thinking in Alzheimer's patients.</p>
+      </div>
+      <div class="glossary-item" data-cat="alzheimer">
+        <div class="glossary-term">APOE ε4</div>
+        <p class="glossary-def">A variant of the APOE gene that is the strongest known genetic risk factor for late-onset Alzheimer's disease. Having one copy increases risk; having two copies increases it further.</p>
+      </div>
+
+      <!-- Parkinson's -->
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Dopamine</div>
+        <p class="glossary-def">A neurotransmitter critical for coordinating smooth movement, motivation, and reward. Its depletion in the substantia nigra is the primary cause of Parkinson's motor symptoms.</p>
+      </div>
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Substantia Nigra</div>
+        <p class="glossary-def">A small region deep in the brain (part of the basal ganglia) that produces dopamine. In Parkinson's disease, the neurons of the substantia nigra progressively die.</p>
+      </div>
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Lewy Body</div>
+        <p class="glossary-def">An abnormal clump of alpha-synuclein protein that forms inside neurons in Parkinson's disease and some related conditions. Named after Frederich Lewy who first described them.</p>
+      </div>
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Alpha-Synuclein (α-syn)</div>
+        <p class="glossary-def">A protein normally found throughout the brain. In Parkinson's disease it misfolds and aggregates into Lewy bodies, damaging and eventually killing the neurons that contain them.</p>
+      </div>
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Bradykinesia</div>
+        <p class="glossary-def">Slowness of movement, one of the cardinal symptoms of Parkinson's. Tasks that used to be automatic — walking, blinking, writing — become slow and effortful.</p>
+      </div>
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Deep Brain Stimulation (DBS)</div>
+        <p class="glossary-def">A surgical procedure in which electrodes are placed in specific brain regions and connected to a pulse generator. Electrical stimulation reduces tremor and other motor symptoms of Parkinson's.</p>
+      </div>
+      <div class="glossary-item" data-cat="parkinson">
+        <div class="glossary-term">Levodopa</div>
+        <p class="glossary-def">The most effective medication for Parkinson's. The brain converts levodopa into dopamine, replenishing what has been lost. Usually combined with carbidopa to improve effectiveness.</p>
+      </div>
+
+      <!-- ALS -->
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Motor Neuron</div>
+        <p class="glossary-def">A neuron that carries signals from the brain or spinal cord to muscles, enabling voluntary movement. ALS specifically destroys motor neurons.</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Upper Motor Neuron</div>
+        <p class="glossary-def">Motor neurons originating in the brain's motor cortex that send signals down through the spinal cord. Damage causes spasticity and weakness.</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Lower Motor Neuron</div>
+        <p class="glossary-def">Motor neurons in the spinal cord and brainstem that send signals directly to muscles. Damage causes muscle weakness, twitching (fasciculations), and wasting (atrophy).</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">TDP-43</div>
+        <p class="glossary-def">A protein involved in gene regulation. In ~97% of ALS cases, TDP-43 misfolds and forms aggregates inside neurons. It is also implicated in frontotemporal dementia.</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Fasciculations</div>
+        <p class="glossary-def">Involuntary muscle twitches visible under the skin, caused by dying lower motor neurons firing spontaneously. A characteristic early sign of ALS.</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Riluzole</div>
+        <p class="glossary-def">The first FDA-approved drug for ALS (1995). It modestly extends survival by reducing glutamate toxicity — the overstimulation of neurons by the neurotransmitter glutamate.</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Antisense Oligonucleotide (ASO)</div>
+        <p class="glossary-def">A type of gene-silencing therapy that uses short DNA-like sequences to block the production of harmful proteins. Tofersen is an ASO drug approved for SOD1-ALS.</p>
+      </div>
+      <div class="glossary-item" data-cat="als">
+        <div class="glossary-term">Frontotemporal Dementia (FTD)</div>
+        <p class="glossary-def">A type of dementia primarily affecting personality, behavior, and language. Occurs in 10–15% of ALS cases; ALS and FTD share overlapping biology including TDP-43 pathology.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Credits ── -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">About this guide</p>
+    <h2>Acknowledgments &amp; Sources</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>This guide was created by <strong>Abigail Biggs</strong>, candidate for B.S. in Data Science and Behavioral Neuroscience, Northeastern University College of Science, March 2026.</p>
+    <ul style="margin-left:1.5rem;line-height:2;">
+      <li>Alzheimer's Association (alz.org)</li>
+      <li>National Institute on Aging (nia.nih.gov)</li>
+      <li>Parkinson's Foundation (parkinson.org)</li>
+      <li>Michael J. Fox Foundation (michaeljfox.org)</li>
+      <li>ALS Association (als.org)</li>
+      <li>World Health Organization — Dementia Fact Sheet</li>
+      <li>U.S. Food and Drug Administration (FDA) drug approval databases</li>
+      <li>ClinicalTrials.gov</li>
+    </ul>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+<script>
+  // Glossary filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.glossary-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      items.forEach(item => {
+        item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>

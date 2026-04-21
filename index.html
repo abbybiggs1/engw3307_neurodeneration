@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Aging Brain — A Guide to Neurodegenerative Diseases</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Hero (home-specific) ── */
+    .home-hero {
+      background: linear-gradient(140deg, var(--plum) 0%, #2d0e40 50%, #1a0828 100%);
+      min-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .home-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(123,79,160,0.28) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1.2rem;
+    }
+    .home-hero h1 {
+      color: var(--white);
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      margin-bottom: 1rem;
+      line-height: 1.08;
+    }
+    .home-hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .home-hero .hero-desc {
+      color: rgba(255,255,255,0.75);
+      font-size: 1.15rem;
+      max-width: 52ch;
+      margin: 1rem auto 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-btn-group { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.8rem 2rem;
+      border-radius: 99px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--gold); color: var(--plum); box-shadow: 0 4px 20px rgba(201,151,74,0.4); }
+    .btn-primary:hover { background: var(--gold-light); color: var(--plum); box-shadow: 0 8px 28px rgba(201,151,74,0.45); }
+    .btn-outline { border: 1.5px solid rgba(255,255,255,0.45); color: var(--white); }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); color: var(--white); }
+
+    /* ── Brain SVG ── */
+    .hero-brain { margin: 3rem auto 0; opacity: 0.9; }
+
+    /* ── Nav cards ── */
+    .nav-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      transition: transform 0.25s, box-shadow 0.25s;
+      border-top: 4px solid var(--plum-light);
+    }
+    .nav-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(59,31,74,0.2); color: var(--text); }
+    .nav-card .nc-icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
+    .nav-card h3 { font-size: 1.2rem; margin-bottom: 0.4rem; }
+    .nav-card p { font-size: 0.9rem; color: var(--text-soft); margin: 0; }
+    .nav-card.c-alz { border-top-color: #8b5cf6; }
+    .nav-card.c-park { border-top-color: #3b82f6; }
+    .nav-card.c-als  { border-top-color: #ef4444; }
+    .nav-card.c-res  { border-top-color: var(--gold); }
+  </style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<!-- ── Hero ── -->
+<header class="home-hero">
+  <h1 class="fade-up-delay-1">The <em>Aging</em> Brain</h1>
+  <p class="hero-desc fade-up-delay-2">
+    A clear, accessible guide to understanding neurodegenerative diseases:
+    what they are, how they develop, and what science is doing about them.
+  </p>
+  <div class="hero-btn-group fade-up-delay-3">
+    <a href="neurodegeneration.html" class="btn btn-primary">Start Learning</a>
+  </div>
+
+  <!-- Decorative brain SVG -->
+  <div class="hero-brain">
+    <svg width="260" height="200" viewBox="0 0 260 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Stylized brain outline -->
+      <ellipse cx="130" cy="105" rx="95" ry="75" fill="rgba(123,79,160,0.15)" stroke="rgba(201,151,74,0.5)" stroke-width="1.5"/>
+      <!-- Left hemisphere -->
+      <path d="M130 40 C95 38 55 58 45 90 C35 120 50 155 80 165 C100 172 120 168 130 160" stroke="rgba(201,151,74,0.7)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Right hemisphere -->
+      <path d="M130 40 C165 38 205 58 215 90 C225 120 210 155 180 165 C160 172 140 168 130 160" stroke="rgba(201,151,74,0.7)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Corpus callosum divider -->
+      <line x1="130" y1="42" x2="130" y2="158" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <!-- Folds (gyri) left -->
+      <path d="M75 80 Q90 68 105 80" stroke="rgba(201,151,74,0.45)" stroke-width="1.5" fill="none"/>
+      <path d="M68 108 Q85 96 100 108" stroke="rgba(201,151,74,0.45)" stroke-width="1.5" fill="none"/>
+      <path d="M75 136 Q92 124 108 136" stroke="rgba(201,151,74,0.45)" stroke-width="1.5" fill="none"/>
+      <!-- Folds right -->
+      <path d="M185 80 Q170 68 155 80" stroke="rgba(201,151,74,0.45)" stroke-width="1.5" fill="none"/>
+      <path d="M192 108 Q175 96 160 108" stroke="rgba(201,151,74,0.45)" stroke-width="1.5" fill="none"/>
+      <path d="M185 136 Q168 124 152 136" stroke="rgba(201,151,74,0.45)" stroke-width="1.5" fill="none"/>
+      <!-- Brainstem -->
+      <path d="M115 158 Q115 180 118 188 Q122 195 130 195 Q138 195 142 188 Q145 180 145 158" fill="rgba(123,79,160,0.3)" stroke="rgba(201,151,74,0.5)" stroke-width="1.5"/>
+      <!-- Glow dots -->
+      <circle cx="88" cy="94" r="3" fill="rgba(201,151,74,0.6)"/>
+      <circle cx="172" cy="94" r="3" fill="rgba(201,151,74,0.6)"/>
+      <circle cx="130" cy="75" r="2.5" fill="rgba(255,255,255,0.4)"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ── Intro ── -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">About this guide</p>
+    <h2>Understanding the Brain as It Ages</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p class="lead">Neurodegenerative diseases affect tens of millions of people worldwide, yet many of us know very little about how they work.</p>
+    <p>Whether you are a caregiver, a student, an older adult thinking about brain health, or simply curious, this guide is for you. Each section uses plain language, clear visuals, and defined terms to make complex science approachable.</p>  </div>
+</section>
+
+<!-- ── Stats ── -->
+<div class="section-alt">
+  <div class="container">
+    <div class="stat-strip">
+      <div class="stat-item">
+        <span class="stat-num">55M+</span>
+        <span class="stat-label">People living with dementia worldwide</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">10M</span>
+        <span class="stat-label">New dementia diagnoses per year</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">10M</span>
+        <span class="stat-label">Living with Parkinson's globally</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">~30K</span>
+        <span class="stat-label">Americans living with ALS</span>
+      </div>
+    </div>
+    <p style="font-family:'DM Sans',sans-serif;font-size:0.82rem;color:var(--text-soft);text-align:center;margin-top:-0.5rem;">Sources: World Health Organization, Alzheimer's Association, ALS Association (2024–2025 estimates)</p>
+  </div>
+</div>
+
+<!-- ── Topic Cards ── -->
+<section class="section">
+  <div class="container-wide">
+    <div class="container" style="padding-bottom:2rem;">
+      <p class="section-label">Explore the guide</p>
+      <h2>What You'll Learn</h2>
+    </div>
+    <div class="card-grid" style="padding:0 2rem;">
+      <a href="neurodegeneration.html" class="nav-card">
+        <div class="nc-icon">🧠</div>
+        <h3>What Is Neurodegeneration?</h3>
+        <p>Learn how the brain works, what neurons do, and how neurodegeneration disrupts these systems over time.</p>
+      </a>
+      <a href="alzheimers.html" class="nav-card c-alz">
+        <div class="nc-icon">🔬</div>
+        <h3>Alzheimer's Disease</h3>
+        <p>Explore plaques, tangles, memory loss, and the current landscape of treatments and research.</p>
+      </a>
+      <a href="parkinsons.html" class="nav-card c-park">
+        <div class="nc-icon">⚙️</div>
+        <h3>Parkinson's Disease</h3>
+        <p>Understand the role of dopamine, how movement is affected, and what treatment options exist.</p>
+      </a>
+      <a href="als.html" class="nav-card c-als">
+        <div class="nc-icon">⚡</div>
+        <h3>ALS</h3>
+        <p>Discover how ALS damages motor neurons and what ongoing research offers for people living with the disease.</p>
+      </a>
+      <a href="research.html" class="nav-card c-res">
+        <div class="nc-icon">🔭</div>
+        <h3>Research &amp; Future Directions</h3>
+        <p>The latest breakthroughs, emerging therapies, and why continued investment in research matters.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

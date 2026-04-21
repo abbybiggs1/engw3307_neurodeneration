@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALS — The Aging Brain</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero { background: linear-gradient(135deg, #4a0505 0%, #991b1b 55%, #300303 100%); }
+  </style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<header class="page-hero accent-als">
+  <p class="hero-sub">Chapter 4</p>
+  <h1>Amyotrophic Lateral Sclerosis (ALS)</h1>
+  <p>A disease that strips away voluntary movement while leaving the mind intact — and a scientific frontier full of urgent work.</p>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label">Overview</p>
+    <h2>What Is ALS?</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p class="lead">ALS — often called Lou Gehrig's disease — is a rapidly progressive neurodegenerative disease that attacks the motor neurons responsible for controlling voluntary muscle movement.</p>
+    <p>The name breaks down as: <em>Amyotrophic</em> (muscle wasting), <em>Lateral</em> (the sides of the spinal cord, where motor neuron pathways run), <em>Sclerosis</em> (scarring or hardening). Together these describe what happens in the disease: muscles shrink and weaken as the nerve signals that drive them are cut off.</p>
+    <p>ALS is less common than Alzheimer's or Parkinson's but progresses more rapidly. Most people with ALS live 2–5 years after diagnosis, though some, like physicist Stephen Hawking, live for decades. Cognitive function is usually preserved, meaning people are fully aware of what is happening to their bodies — a fact that makes the emotional burden of ALS particularly profound.</p>
+
+    <div class="stat-strip" style="margin-top:2rem;">
+      <div class="stat-item"><span class="stat-num">~30K</span><span class="stat-label">Americans living with ALS</span></div>
+      <div class="stat-item"><span class="stat-num">5K</span><span class="stat-label">New U.S. diagnoses per year</span></div>
+      <div class="stat-item"><span class="stat-num">2–5 yrs</span><span class="stat-label">Typical survival after diagnosis</span></div>
+      <div class="stat-item"><span class="stat-num">~10%</span><span class="stat-label">Of cases are familial (inherited)</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Brain and spinal cord changes</p>
+    <h2>What Happens to Motor Neurons?</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>ALS attacks two types of <span class="tooltip-word" data-tip="Neurons that carry signals from the brain and spinal cord to muscles, controlling voluntary movement.">motor neurons</span>:</p>
+
+    <div class="diagram-wrapper">
+      <p style="font-family:'DM Sans',sans-serif;font-weight:600;color:var(--plum);margin-bottom:1rem;">Upper and Lower Motor Neuron Pathways</p>
+      <svg width="480" height="270" viewBox="0 0 480 270" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram showing upper and lower motor neuron pathways from brain to muscle" role="img">
+        <!-- Brain -->
+        <ellipse cx="240" cy="38" rx="60" ry="32" fill="rgba(123,79,160,0.15)" stroke="#7b4fa0" stroke-width="2"/>
+        <text x="240" y="35" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" fill="#3b1f4a" font-weight="600">Motor Cortex</text>
+        <text x="240" y="48" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#5a2d72">(Brain)</text>
+        <!-- Upper motor neuron -->
+        <path d="M240 70 L240 140" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+        <polygon points="235,136 245,136 240,148" fill="#3b82f6"/>
+        <text x="255" y="100" font-family="DM Sans,sans-serif" font-size="9" fill="#1e3a8a" font-weight="600">Upper Motor</text>
+        <text x="255" y="112" font-family="DM Sans,sans-serif" font-size="9" fill="#1e3a8a" font-weight="600">Neuron</text>
+        <!-- X mark on upper motor neuron -->
+        <circle cx="240" cy="105" r="12" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="240" y="110" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="14" fill="#ef4444">✕</text>
+        <!-- Spinal cord -->
+        <rect x="224" y="145" width="32" height="60" rx="6" fill="rgba(201,151,74,0.12)" stroke="#c9974a" stroke-width="1.5"/>
+        <text x="240" y="168" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7a5c1e" font-weight="600">Spinal</text>
+        <text x="240" y="181" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7a5c1e" font-weight="600">Cord</text>
+        <!-- Lower motor neuron -->
+        <path d="M240 205 L240 245" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+        <polygon points="235,241 245,241 240,253" fill="#10b981"/>
+        <text x="255" y="228" font-family="DM Sans,sans-serif" font-size="9" fill="#065f46" font-weight="600">Lower Motor</text>
+        <text x="255" y="240" font-family="DM Sans,sans-serif" font-size="9" fill="#065f46" font-weight="600">Neuron</text>
+        <!-- X mark on lower motor neuron -->
+        <circle cx="240" cy="225" r="12" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="240" y="230" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="14" fill="#ef4444">✕</text>
+        <!-- Muscle -->
+        <ellipse cx="240" cy="262" rx="30" ry="14" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-width="2" stroke-dasharray="5 3"/>
+        <text x="240" y="266" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7f1d1d" font-weight="600">Muscle (weakens)</text>
+
+        <!-- Left labels -->
+        <text x="20" y="38" font-family="DM Sans,sans-serif" font-size="9" fill="#1e3a8a">ALS attacks</text>
+        <text x="20" y="50" font-family="DM Sans,sans-serif" font-size="9" fill="#1e3a8a">BOTH types</text>
+        <!-- Arrows pointing to X marks -->
+        <path d="M65 82 Q90 90 150 102" stroke="#ef4444" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+        <polygon points="148,98 155,103 148,108" fill="#ef4444"/>
+        <path d="M65 210 Q90 218 150 222" stroke="#ef4444" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+        <polygon points="148,218 155,223 148,228" fill="#ef4444"/>
+
+        <!-- Right side: healthy comparison -->
+        <text x="355" y="75" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#5a2d72" font-weight="600">Healthy signal path:</text>
+        <path d="M355 85 L355 260" stroke="#10b981" stroke-width="2" stroke-dasharray="6 3" fill="none"/>
+        <text x="400" y="150" font-family="DM Sans,sans-serif" font-size="8" fill="#065f46">Brain → spinal cord</text>
+        <text x="400" y="162" font-family="DM Sans,sans-serif" font-size="8" fill="#065f46">→ muscle</text>
+        <text x="400" y="174" font-family="DM Sans,sans-serif" font-size="8" fill="#065f46">(intact signal)</text>
+        <text x="355" y="272" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#10b981">✓ Normal movement</text>
+      </svg>
+      <p class="diagram-caption">ALS damages both upper motor neurons (in the brain's motor cortex) and lower motor neurons (in the spinal cord). Without these signals, muscles cannot contract and gradually waste away.</p>
+    </div>
+
+    <div class="card-grid" style="margin-top:1.5rem;">
+      <div class="card">
+        <h4>⬆️ Upper Motor Neurons</h4>
+        <p>These originate in the motor cortex of the brain and send signals <em>down</em> through the spinal cord to lower motor neurons. When they are damaged in ALS, muscles become stiff and spastic, and control of voluntary movement becomes impaired.</p>
+      </div>
+      <div class="card">
+        <h4>⬇️ Lower Motor Neurons</h4>
+        <p>These are in the spinal cord (and brainstem) and send signals <em>out</em> to muscles. When lower motor neurons are lost in ALS, muscles no longer receive signals — they weaken, twitch involuntarily (<span class="tooltip-word" data-tip="Involuntary muscle twitches visible under the skin, caused by dying lower motor neurons.">fasciculations</span>), and eventually waste away (<span class="tooltip-word" data-tip="Wasting away of muscle tissue due to lack of nerve input.">atrophy</span>).</p>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:1.5rem;">
+      <h4>Important distinction</h4>
+      <p>ALS typically spares sensory neurons (touch, pain, temperature) and the neurons controlling eye movement, bladder, and bowel. This means most people with ALS retain their senses, bladder function, and the ability to move their eyes — even as other voluntary muscles are lost.</p>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label">Disease course</p>
+    <h2>Symptoms and Progression</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>ALS can begin in different regions of the body — the arms, legs, or the muscles of speaking and swallowing (called "bulbar onset"). Regardless of where it starts, the disease typically spreads.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Early Stage</h4>
+        <p>Symptoms often begin subtly — weakness in one hand or foot, slurred speech, or difficulty swallowing. Many people notice they are dropping things or tripping more often. Because symptoms can mimic other conditions, diagnosis is often delayed.</p>
+        <div class="tag-list"><span class="tag">Muscle weakness (one limb or region)</span><span class="tag">Muscle twitching</span><span class="tag">Slurred speech</span><span class="tag">Difficulty swallowing</span></div>
+      </div>
+      <div class="timeline-item">
+        <h4>Middle Stage</h4>
+        <p>Weakness spreads to other muscles. Mobility becomes significantly impaired; most people require assistive devices such as wheelchairs. Breathing can become affected as respiratory muscles weaken, requiring monitoring and eventually assisted ventilation.</p>
+        <div class="tag-list"><span class="tag">Widespread muscle weakness</span><span class="tag">Loss of independent mobility</span><span class="tag">Breathing difficulties</span><span class="tag">Significant speech changes</span></div>
+      </div>
+      <div class="timeline-item">
+        <h4>Late Stage</h4>
+        <p>Most voluntary movement is lost. Communication may shift to eye-tracking technology or other assistive devices. Respiratory support (non-invasive or invasive ventilation) becomes essential. Cognitive function is typically preserved. End of life often results from respiratory failure.</p>
+        <div class="tag-list"><span class="tag">Near-complete paralysis</span><span class="tag">Requires ventilator support</span><span class="tag">Communication via assistive technology</span><span class="tag">Requires full-time care</span></div>
+      </div>
+    </div>
+
+    <div class="warning-box">
+      <p><strong>Note on cognition:</strong> About 10–15% of ALS patients develop <span class="tooltip-word" data-tip="A type of dementia that primarily affects personality, behavior, and language, caused by damage to the frontal and temporal lobes.">frontotemporal dementia (FTD)</span>. Research has shown ALS and FTD exist on a spectrum, with shared genetic and biological features — particularly involving a protein called TDP-43.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Care and research</p>
+    <h2>Current Care and Research</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>ALS management is <em>multidisciplinary</em> — a team of specialists works together because the disease affects so many body systems. No cure currently exists, but research is advancing.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h4>💊 FDA-Approved Drugs</h4>
+        <p><em>Riluzole</em> (1995) was the first drug approved for ALS; it modestly extends survival by reducing glutamate toxicity. <em>Edaravone</em> (2017) reduces oxidative stress. <em>Relyvrio</em> (sodium phenylbutyrate/ursodoxicoltaurine, 2022) targets mitochondrial and endoplasmic reticulum stress — though its FDA approval status has been the subject of ongoing review.</p>
+      </div>
+      <div class="card">
+        <h4>🧬 Gene Therapy</h4>
+        <p>About 20% of familial ALS cases are caused by mutations in the <em>SOD1</em> gene. Tofersen, an antisense oligonucleotide drug approved in 2023, targets this mutation specifically — a landmark in personalized ALS treatment. Research is ongoing for other ALS-linked genes.</p>
+      </div>
+      <div class="card">
+        <h4>🔬 Stem Cell &amp; Other Approaches</h4>
+        <p>Researchers are exploring stem cell transplantation to support or replace lost motor neurons, as well as anti-inflammatory approaches targeting neuroinflammation in ALS. TDP-43 — the protein clumped in most ALS cases — is a major research target.</p>
+      </div>
+      <div class="card">
+        <h4>🤝 Palliative &amp; Supportive Care</h4>
+        <p>A specialized ALS care team typically includes neurologists, respiratory therapists, physical and occupational therapists, speech-language pathologists, nutritionists, social workers, and palliative care specialists — all working together to maximize quality of life at every stage.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <a href="research.html" class="btn btn-primary" style="background:var(--plum-mid);">Next: Research &amp; Future Directions →</a>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

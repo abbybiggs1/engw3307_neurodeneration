@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parkinson's Disease — The Aging Brain</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero { background: linear-gradient(135deg, #0f2a5a 0%, #1e40af 55%, #0a1a40 100%); }
+  </style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<header class="page-hero accent-parkinson">
+  <p class="hero-sub">Chapter 3</p>
+  <h1>Parkinson's Disease</h1>
+  <p>A disease of movement — and much more — caused by the loss of dopamine-producing neurons.</p>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label">Overview</p>
+    <h2>What Is Parkinson's Disease?</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p class="lead">Parkinson's disease is a progressive neurological disorder that primarily affects movement — but also impacts mood, cognition, sleep, and many other body systems.</p>
+    <p>It is the second most common neurodegenerative disease after Alzheimer's. Parkinson's develops when neurons in a specific part of the brain called the <span class="tooltip-word" data-tip="A region deep in the brain that produces dopamine and plays a critical role in coordinating smooth, voluntary movement.">substantia nigra</span> begin to die. These neurons produce <span class="tooltip-word" data-tip="A neurotransmitter (chemical messenger) that plays a key role in coordinating smooth movement, motivation, reward, and mood.">dopamine</span> — a chemical messenger critical for coordinating smooth, controlled movement. As dopamine levels fall, movement becomes harder to control.</p>
+    <p>Parkinson's disease was first described by English physician Dr. James Parkinson in 1817, who called it "the shaking palsy."</p>
+
+    <div class="stat-strip" style="margin-top:2rem;">
+      <div class="stat-item"><span class="stat-num">10M</span><span class="stat-label">People with Parkinson's worldwide</span></div>
+      <div class="stat-item"><span class="stat-num">90K</span><span class="stat-label">New U.S. diagnoses per year</span></div>
+      <div class="stat-item"><span class="stat-num">60%</span><span class="stat-label">Of dopamine neurons lost before symptoms appear</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Brain changes</p>
+    <h2>Dopamine and the Substantia Nigra</h2>
+    <div class="gold-rule"><span>✦</span></div>
+
+    <div class="diagram-wrapper">
+      <p style="font-family:'DM Sans',sans-serif;font-weight:600;color:var(--plum);margin-bottom:1rem;">Dopamine Pathway: Healthy vs. Parkinson's</p>
+      <svg width="520" height="210" viewBox="0 0 520 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Comparison of dopamine pathway in healthy brain versus Parkinson's disease" role="img">
+        <!-- Left: healthy -->
+        <text x="110" y="20" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" fill="#5a2d72" font-weight="700">Healthy Brain</text>
+        <rect x="30" y="145" width="70" height="36" rx="8" fill="rgba(59,130,246,0.15)" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="65" y="160" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#1e3a8a" font-weight="600">Substantia</text>
+        <text x="65" y="172" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#1e3a8a" font-weight="600">Nigra</text>
+        <!-- Dopamine dots flowing up -->
+        <circle cx="100" cy="120" r="5" fill="#3b82f6" opacity="0.85"/>
+        <circle cx="110" cy="100" r="5" fill="#3b82f6" opacity="0.8"/>
+        <circle cx="118" cy="78"  r="5" fill="#3b82f6" opacity="0.75"/>
+        <circle cx="122" cy="56"  r="5" fill="#3b82f6" opacity="0.7"/>
+        <text x="130" y="50" font-family="DM Sans,sans-serif" font-size="8.5" fill="#1e3a8a">Dopamine</text>
+        <text x="130" y="62" font-family="DM Sans,sans-serif" font-size="8.5" fill="#1e3a8a">flows freely</text>
+        <!-- Striatum target left -->
+        <ellipse cx="80" cy="48" rx="38" ry="22" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1.5"/>
+        <text x="80" y="45" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#065f46" font-weight="600">Striatum</text>
+        <text x="80" y="58" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="#065f46">(movement control)</text>
+        <!-- Green check -->
+        <text x="140" y="100" font-family="DM Sans,sans-serif" font-size="24" fill="#10b981">✓</text>
+        <text x="145" y="120" font-family="DM Sans,sans-serif" font-size="9" fill="#065f46">Smooth</text>
+        <text x="145" y="132" font-family="DM Sans,sans-serif" font-size="9" fill="#065f46">movement</text>
+
+        <!-- Divider -->
+        <line x1="220" y1="15" x2="220" y2="200" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+        <!-- Right: Parkinson's -->
+        <text x="380" y="20" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" fill="#7f1d1d" font-weight="700">Parkinson's Disease</text>
+        <rect x="300" y="145" width="70" height="36" rx="8" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="335" y="160" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7f1d1d" font-weight="600">Substantia</text>
+        <text x="335" y="172" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7f1d1d" font-weight="600">Nigra (depleted)</text>
+        <!-- X marks over dying neurons -->
+        <text x="328" y="143" font-family="DM Sans,sans-serif" font-size="14" fill="#ef4444" opacity="0.7">✕</text>
+        <text x="342" y="143" font-family="DM Sans,sans-serif" font-size="14" fill="#ef4444" opacity="0.5">✕</text>
+        <!-- Few dopamine dots -->
+        <circle cx="372" cy="120" r="3.5" fill="#ef4444" opacity="0.5"/>
+        <circle cx="378" cy="100" r="2.5" fill="#ef4444" opacity="0.4"/>
+        <!-- Striatum target right - depleted -->
+        <ellipse cx="360" cy="48" rx="38" ry="22" fill="rgba(239,68,68,0.08)" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5 3"/>
+        <text x="360" y="45" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7f1d1d" font-weight="600">Striatum</text>
+        <text x="360" y="58" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="#7f1d1d">(dopamine depleted)</text>
+        <!-- Red X -->
+        <text x="408" y="100" font-family="DM Sans,sans-serif" font-size="24" fill="#ef4444">✕</text>
+        <text x="410" y="120" font-family="DM Sans,sans-serif" font-size="9" fill="#7f1d1d">Tremor,</text>
+        <text x="410" y="132" font-family="DM Sans,sans-serif" font-size="9" fill="#7f1d1d">stiffness</text>
+
+        <!-- Lewy body callout -->
+        <circle cx="335" cy="120" r="11" fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="335" y="117" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7.5" fill="#92400e" font-weight="600">Lewy</text>
+        <text x="335" y="127" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7.5" fill="#92400e" font-weight="600">body</text>
+        <line x1="346" y1="120" x2="380" y2="108" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="383" y="106" font-family="DM Sans,sans-serif" font-size="8" fill="#92400e">Alpha-synuclein</text>
+        <text x="383" y="116" font-family="DM Sans,sans-serif" font-size="8" fill="#92400e">clumps inside cells</text>
+      </svg>
+      <p class="diagram-caption">In Parkinson's, dopamine-producing neurons in the substantia nigra progressively die. Without sufficient dopamine, the striatum — which helps coordinate movement — cannot function properly. Lewy bodies (clumps of alpha-synuclein protein) form inside the affected neurons.</p>
+    </div>
+
+    <h3>Lewy Bodies and Alpha-Synuclein</h3>
+    <p>In Parkinson's disease, an abnormal protein called <span class="tooltip-word" data-tip="A protein found throughout the brain. In Parkinson's, it misfolds and clumps together, forming Lewy bodies that damage and kill neurons.">alpha-synuclein</span> misfolds and clumps together inside neurons, forming structures called <span class="tooltip-word" data-tip="Abnormal protein clumps found inside neurons in Parkinson's disease and some other neurological conditions.">Lewy bodies</span>. These accumulations interfere with normal cell function and eventually destroy the neurons that contain them.</p>
+    <p>The reason Parkinson's is so closely associated with movement problems is that the neurons most severely affected produce dopamine — the neurotransmitter that helps coordinate smooth, controlled movement. But dopamine also affects mood, motivation, sleep, and the gut, which is why Parkinson's has so many non-motor symptoms too.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label">Symptoms</p>
+    <h2>What Are the Symptoms?</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>Parkinson's symptoms are often divided into <em>motor</em> (movement-related) and <em>non-motor</em> symptoms. The four classic motor symptoms are sometimes called the "TRAP" of Parkinson's:</p>
+
+    <div class="card-grid" style="margin-bottom:2rem;">
+      <div class="card">
+        <h4>🤝 T — Tremor</h4>
+        <p>An involuntary rhythmic shaking, most commonly in the hands or fingers at rest. The characteristic "pill-rolling" tremor — moving the thumb against the forefinger — is a classic sign.</p>
+      </div>
+      <div class="card">
+        <h4>💪 R — Rigidity</h4>
+        <p>Muscle stiffness that can occur in any part of the body. Limbs may feel stiff and inflexible, making movement painful or difficult. Caregivers may feel resistance when moving a person's arm.</p>
+      </div>
+      <div class="card">
+        <h4>🐢 A — Akinesia / Bradykinesia</h4>
+        <p>Slowness of movement (bradykinesia) or loss of spontaneous movement. Tasks that used to be automatic — like swinging arms while walking or blinking — become slow and effortful.</p>
+      </div>
+      <div class="card">
+        <h4>🏃 P — Postural Instability</h4>
+        <p>Impaired balance and coordination that increases the risk of falls. The person may have a stooped posture and a shuffling walk. This usually develops in later stages.</p>
+      </div>
+    </div>
+
+    <h3>Non-Motor Symptoms</h3>
+    <p>These are often less recognized but can significantly impact quality of life:</p>
+    <div class="tag-list">
+      <span class="tag">Depression and anxiety</span>
+      <span class="tag">Sleep disturbances (REM sleep disorder)</span>
+      <span class="tag">Loss of smell (anosmia)</span>
+      <span class="tag">Constipation</span>
+      <span class="tag">Cognitive impairment</span>
+      <span class="tag">Low blood pressure on standing</span>
+      <span class="tag">Fatigue</span>
+      <span class="tag">Soft speech (hypophonia)</span>
+      <span class="tag">Swallowing difficulties</span>
+    </div>
+
+    <div class="info-box" style="margin-top:2rem;">
+      <h4>Did you know?</h4>
+      <p>Many non-motor symptoms — like constipation, loss of smell, and sleep disturbances — can appear <strong>years before motor symptoms</strong>. Researchers are working to use these early signs to detect Parkinson's sooner.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Treatment</p>
+    <h2>Treatment Options</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>There is currently no cure for Parkinson's disease, but many effective treatments can significantly manage symptoms and maintain quality of life for years.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h4>💊 Levodopa / Carbidopa</h4>
+        <p>The gold standard treatment. The brain converts levodopa into dopamine, replenishing what has been lost. Carbidopa is added to make levodopa more effective and reduce side effects. Most effective for motor symptoms, especially early in disease.</p>
+      </div>
+      <div class="card">
+        <h4>🧲 Deep Brain Stimulation (DBS)</h4>
+        <p>A surgical procedure where electrodes are implanted in specific brain regions and connected to a pulse generator (like a pacemaker). Electrical stimulation helps regulate abnormal brain signals and can dramatically reduce tremors and other motor symptoms.</p>
+      </div>
+      <div class="card">
+        <h4>💉 Dopamine Agonists</h4>
+        <p>Drugs that mimic the effect of dopamine in the brain. Often used in younger patients or in combination with levodopa. Examples include pramipexole and ropinirole.</p>
+      </div>
+      <div class="card">
+        <h4>🏃 Physical &amp; Occupational Therapy</h4>
+        <p>Exercise is one of the most powerful tools for managing Parkinson's. Programs like LSVT BIG (for movement) and LSVT LOUD (for voice) are specifically designed for Parkinson's. Dance and boxing programs have also shown benefits.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <a href="als.html" class="btn btn-primary" style="background:var(--plum-mid);">Next: ALS →</a>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>

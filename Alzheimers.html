@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alzheimer's Disease — The Aging Brain</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero { background: linear-gradient(135deg, #2d1550 0%, #4a1a7a 55%, #1a0828 100%); }
+    .plaque-diagram circle { transition: opacity 0.3s; }
+  </style>
+</head>
+<body>
+<script src="nav.js"></script>
+
+<header class="page-hero accent-alzheimer">
+  <p class="hero-sub">Chapter 2</p>
+  <h1>Alzheimer's Disease</h1>
+  <p>The most common form of dementia — what it does to the brain, what it feels like, and where research stands.</p>
+</header>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label">Overview</p>
+    <h2>What Is Alzheimer's Disease?</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p class="lead">Alzheimer's disease is a progressive brain disorder that slowly destroys memory and thinking skills, and eventually the ability to carry out even simple tasks.</p>
+    <p>It is the most common cause of <span class="tooltip-word" data-tip="A general term for a decline in cognitive function severe enough to interfere with daily life. Alzheimer's is responsible for 60–80% of dementia cases.">dementia</span>, accounting for an estimated 60–80% of all dementia cases. In the United States alone, more than 6 million people are living with Alzheimer's disease, most of them aged 65 and older.</p>
+    <p>Alzheimer's is not a normal part of aging, though the greatest known risk factor is advancing age. The disease is named after Dr. Alois Alzheimer, who first described it in 1906 after observing unusual changes in the brain tissue of a patient who had died after years of severe memory problems.</p>
+
+    <div class="stat-strip" style="margin-top:2rem;">
+      <div class="stat-item"><span class="stat-num">6.9M</span><span class="stat-label">Americans with Alzheimer's (2024)</span></div>
+      <div class="stat-item"><span class="stat-num">#6</span><span class="stat-label">Leading cause of death in the U.S.</span></div>
+      <div class="stat-item"><span class="stat-num">2/3</span><span class="stat-label">Of those affected are women</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Brain changes</p>
+    <h2>What Happens in the Brain?</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>Two abnormal structures are the hallmarks of Alzheimer's disease at the cellular level: <strong>amyloid plaques</strong> and <strong>tau tangles</strong>. These develop years — sometimes decades — before symptoms appear.</p>
+
+    <div class="diagram-wrapper">
+      <p style="font-family:'DM Sans',sans-serif;font-weight:600;color:var(--plum);margin-bottom:1rem;">Amyloid Plaques &amp; Tau Tangles</p>
+      <svg width="500" height="220" viewBox="0 0 500 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram showing amyloid plaques between neurons and tau tangles inside a neuron" role="img">
+        <!-- Healthy neuron left -->
+        <circle cx="70" cy="110" r="40" fill="rgba(123,79,160,0.12)" stroke="#7b4fa0" stroke-width="2"/>
+        <text x="70" y="106" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" fill="#3b1f4a" font-weight="600">Healthy</text>
+        <text x="70" y="119" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" fill="#3b1f4a" font-weight="600">Neuron</text>
+        <!-- Healthy axon lines (straight) -->
+        <line x1="80" y1="95" x2="115" y2="95" stroke="#7b4fa0" stroke-width="1.5"/>
+        <line x1="80" y1="110" x2="115" y2="110" stroke="#7b4fa0" stroke-width="1.5"/>
+        <line x1="80" y1="125" x2="115" y2="125" stroke="#7b4fa0" stroke-width="1.5"/>
+        <text x="97" y="85" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#5a2d72">Normal tau</text>
+        <text x="97" y="141" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#5a2d72">(straight tracks)</text>
+
+        <!-- Amyloid plaque cluster (center-left gap) -->
+        <g transform="translate(155,90)">
+          <circle cx="0"   cy="30" r="16" fill="rgba(239,68,68,0.2)" stroke="#ef4444" stroke-width="1.5"/>
+          <circle cx="20"  cy="14" r="12" fill="rgba(239,68,68,0.18)" stroke="#ef4444" stroke-width="1.5"/>
+          <circle cx="32"  cy="35" r="10" fill="rgba(239,68,68,0.16)" stroke="#ef4444" stroke-width="1.5"/>
+          <circle cx="10"  cy="52" r="9"  fill="rgba(239,68,68,0.14)" stroke="#ef4444" stroke-width="1.5"/>
+          <text x="16" y="-6" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#b91c1c" font-weight="600">Amyloid Plaque</text>
+          <text x="16" y="5" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="#b91c1c">(between neurons)</text>
+        </g>
+
+        <!-- Damaged neuron right with tau tangles -->
+        <circle cx="390" cy="110" r="42" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="2"/>
+        <text x="390" y="103" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" fill="#7f1d1d" font-weight="600">Damaged</text>
+        <text x="390" y="116" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" fill="#7f1d1d" font-weight="600">Neuron</text>
+        <!-- Tau tangles (squiggly lines) -->
+        <path d="M370 128 Q376 122 382 128 Q388 134 394 128 Q400 122 406 128" stroke="#f59e0b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M368 140 Q375 133 382 140 Q389 147 396 140 Q403 133 410 140" stroke="#f59e0b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <text x="390" y="160" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#92400e">Tau tangles inside cell</text>
+
+        <!-- Labels bottom -->
+        <text x="70" y="168" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#5a2d72">Before disease</text>
+        <text x="390" y="168" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#b91c1c">With Alzheimer's changes</text>
+
+        <!-- Arrow indicating progression -->
+        <path d="M110 110 L340 110" stroke="#c9974a" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <polygon points="336,105 348,110 336,115" fill="#c9974a"/>
+        <text x="225" y="103" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7a5c1e">Disease progression</text>
+
+        <!-- Synapse loss indicator -->
+        <text x="480" y="110" text-anchor="end" font-family="DM Sans,sans-serif" font-size="8" fill="#ef4444">Synapses</text>
+        <text x="480" y="122" text-anchor="end" font-family="DM Sans,sans-serif" font-size="8" fill="#ef4444">lost</text>
+      </svg>
+      <p class="diagram-caption">Amyloid plaques form in the spaces <em>between</em> neurons. Tau tangles form <em>inside</em> neurons, collapsing the internal scaffold that keeps them healthy.</p>
+    </div>
+
+    <h3>Amyloid Plaques</h3>
+    <p><span class="tooltip-word" data-tip="A sticky protein fragment that builds up between nerve cells and disrupts communication. A hallmark of Alzheimer's disease.">Amyloid plaques</span> are clumps of a protein fragment called beta-amyloid that accumulate in the spaces between neurons. In a healthy brain, these protein fragments are broken down and cleared away. In Alzheimer's, they build up and cluster together, interfering with communication between neurons.</p>
+
+    <h3>Tau Tangles</h3>
+    <p>Inside healthy neurons, a protein called <span class="tooltip-word" data-tip="A protein that normally stabilizes the internal skeleton of neurons. In Alzheimer's, it becomes abnormal and forms twisted 'tangles' inside cells.">tau</span> helps stabilize internal structures called microtubules — imagine them as train tracks that transport nutrients and other materials through the neuron. In Alzheimer's, tau proteins change shape and clump together into twisted "tangles," collapsing the tracks and causing the neuron to malfunction and die.</p>
+
+    <div class="info-box">
+      <h4>Where does it start?</h4>
+      <p>Alzheimer's typically begins in the <strong>hippocampus</strong> — the brain region most involved in forming new memories — which is why short-term memory loss is usually one of the first symptoms. As the disease progresses, it spreads to other regions of the brain.</p>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label">What to expect</p>
+    <h2>Symptoms and Progression</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>Alzheimer's disease progresses in stages. Most clinicians describe a mild, moderate, and severe stage, though the timeline and specific symptoms vary greatly between individuals.</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Early Stage (Mild)</h4>
+        <p>People may appear largely independent but notice lapses in memory — especially for recent events — or have trouble finding words. They may repeat questions or misplace familiar objects. Many people in this stage continue to work and participate in social activities.</p>
+        <div class="tag-list"><span class="tag">Short-term memory lapses</span><span class="tag">Difficulty finding words</span><span class="tag">Getting lost in familiar places</span><span class="tag">Mood changes</span></div>
+      </div>
+      <div class="timeline-item">
+        <h4>Middle Stage (Moderate)</h4>
+        <p>This is typically the longest stage. Memory loss and confusion grow significantly. People may struggle to recognize family members, need help with daily activities like dressing or bathing, and experience changes in personality or behavior such as wandering, suspicion, or agitation.</p>
+        <div class="tag-list"><span class="tag">Significant memory gaps</span><span class="tag">Difficulty recognizing loved ones</span><span class="tag">Trouble with daily tasks</span><span class="tag">Wandering</span><span class="tag">Sleep disturbances</span></div>
+      </div>
+      <div class="timeline-item">
+        <h4>Late Stage (Severe)</h4>
+        <p>In the final stage, people lose the ability to communicate verbally, recognize loved ones, or care for themselves. The brain can no longer control basic bodily functions. Full-time care is required. Infections, especially pneumonia, are a common cause of death.</p>
+        <div class="tag-list"><span class="tag">Loss of verbal communication</span><span class="tag">Difficulty swallowing</span><span class="tag">Loss of mobility</span><span class="tag">Full-time care needed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-alt">
+  <div class="container">
+    <p class="section-label">Treatment</p>
+    <h2>Current Treatments and Research</h2>
+    <div class="gold-rule"><span>✦</span></div>
+    <p>There is currently no cure for Alzheimer's disease, but several treatments can manage symptoms and, more recently, slow disease progression.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h4>💊 Symptom-Managing Medications</h4>
+        <p><em>Cholinesterase inhibitors</em> (such as donepezil) boost levels of a chemical messenger involved in memory and judgment. <em>Memantine</em> regulates another messenger to slow symptom progression. These do not stop the disease but can improve quality of life.</p>
+      </div>
+      <div class="card">
+        <h4>🧬 Anti-Amyloid Therapies</h4>
+        <p>A new class of drugs called <em>anti-amyloid monoclonal antibodies</em> — including lecanemab (Leqembi) and donanemab — target amyloid plaques directly and have shown they can slow cognitive decline in early-stage disease. Approved by the FDA in 2023–2024.</p>
+      </div>
+      <div class="card">
+        <h4>🧠 Lifestyle Approaches</h4>
+        <p>Research supports that regular physical activity, mental engagement, social connection, quality sleep, and heart-healthy diet may lower risk and support brain health — though they cannot halt the disease once it has started.</p>
+      </div>
+      <div class="card">
+        <h4>🔬 Research Frontiers</h4>
+        <p>Scientists are exploring early detection through blood tests, tau-targeting therapies, inflammation-reducing drugs, and gene therapy. The goal: catch the disease before symptoms appear and intervene early.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <a href="parkinsons.html" class="btn btn-primary" style="background:var(--plum-mid);">Next: Parkinson's Disease →</a>
+  </div>
+</section>
+
+<script src="nav.js"></script>
+</body>
+</html>
